@@ -60,7 +60,7 @@ const mapStateToProps = (state: StateType) => {
     ),
     availableHeroes: filter(rebels, (rebel: RebelConfigType) => rebel.type === 'hero').map(
       (rebel: RebelConfigType) => rebel.id
-    ),
+    ).sort((a, b) => a < b ? -1 : 1),
     availableMissions: ['--- CORE ---']
       .concat(coreMissions)
       .concat(['--- WAVE 1 ---'])
