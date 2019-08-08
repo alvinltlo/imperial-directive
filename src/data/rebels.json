@@ -238,5 +238,25 @@
     "reinforcementCost": -1,
     "maxInGroup": 1,
     "type": "hero"
+  },
+  "davith": {
+    "id": "davith",
+    "firstName": "Davith",
+    "lastName": "Elso",
+    "elite": false,
+    "threat": 0,
+    "reinforcementCost": -1,
+    "maxInGroup": 1,
+    "type": "hero"
+  },
+  "murne": {
+    "id": "murne",
+    "firstName": "Murne",
+    "lastName": "Rin",
+    "elite": false,
+    "threat": 0,
+    "reinforcementCost": -1,
+    "maxInGroup": 1,
+    "type": "hero"
   }
 }
