@@ -258,5 +258,35 @@
     "reinforcementCost": -1,
     "maxInGroup": 1,
     "type": "hero"
+  },
+  "wookieWarriors": {
+    "id": "wookieWarriors",
+    "firstName": "Wookie Warriors",
+    "lastName": "",
+    "elite": false,
+    "threat": 8,
+    "reinforcementCost": 4,
+    "maxInGroup": 2,
+    "type": "ally"
+  },
+  "allianceSmuggler": {
+    "id": "allianceSmuggler",
+    "firstName": "Alliance Smuggler",
+    "lastName": "",
+    "elite": false,
+    "threat": 2,
+    "reinforcementCost": 2,
+    "maxInGroup": 1,
+    "type": "ally"
+  },
+  "landoCalrissian": {
+    "id": "landoCalrissian",
+    "firstName": "Lando",
+    "lastName": "Calrissian",
+    "elite": true,
+    "threat": 6,
+    "reinforcementCost": -1,
+    "maxInGroup": 1,
+    "type": "ally"
   }
 }

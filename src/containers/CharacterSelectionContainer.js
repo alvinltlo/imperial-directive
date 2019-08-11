@@ -57,7 +57,7 @@ const mapStateToProps = (state: StateType) => {
   return {
     availableAllies: filter(rebels, (rebel: RebelConfigType) => rebel.type === 'ally').map(
       (rebel: RebelConfigType) => rebel.id
-    ),
+    ).sort((a, b) => a < b ? -1 : 1),
     availableHeroes: filter(rebels, (rebel: RebelConfigType) => rebel.type === 'hero').map(
       (rebel: RebelConfigType) => rebel.id
     ).sort((a, b) => a < b ? -1 : 1),
@@ -69,7 +69,7 @@ const mapStateToProps = (state: StateType) => {
       .concat(twinShadowsMissions)
       .concat(['--- RETURN TO HOTH ---'])
       .concat(returnToHothMissions),
-    availableVillains: ['darthVader', 'generalWeiss', 'ig88', 'royalGuardChampion'],
+    availableVillains: ['darthVader', 'generalWeiss', 'ig88', 'royalGuardChampion', "bobaFett"],
   };
 };
 
