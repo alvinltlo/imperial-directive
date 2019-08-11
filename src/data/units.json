@@ -1390,5 +1390,35 @@
     "reinforcementCost": -1,
     "threat": 5,
     "unique": true
+  },
+  "generalSorin": {
+    "affiliation": "imperial",
+    "attributes": ["leader"],
+    "buffs": [],
+    "commands": [
+      {
+        "condition": "If adjacent to a friendly figure that is within range and LOS of a target: {ATTACK_TARGET}",
+        "command": "{ACTION} Use General's Bombardment ability to order the friendly figure to attack {ATTACK_TARGET}."
+      },
+      {
+        "condition": "If within 3 spaces of {ATTACK_TARGET}",
+        "command": "{ACTION} Advance 1 toward {ATTACK_TARGET}, then {ACTION} Attack {ATTACK_TARGET}, then {ACTION} move towards a friendly figure, prioritizing DROIDS and VEHICLES."
+      },
+      {
+        "condition": "If not within 3 spaces of {ATTACK_TARGET}",
+        "command": "{ACTION} Move towards {ATTACK_TARGET}."
+      }
+    ],
+    "eligibleForHpBoost": false,
+    "elite": true,
+    "expansion": "returnToHoth",
+    "hpBoosts": {},
+    "id": "generalSorin",
+    "maxDeployed": 1,
+    "maxInGroup": 1,
+    "name": "General Sorin",
+    "reinforcementCost": -1,
+    "threat": 8,
+    "unique": true
   }
 }
